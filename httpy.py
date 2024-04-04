@@ -78,7 +78,7 @@ def send_http_request(url, method = 'GET', headers = None, body_str = None, time
   }
 
 def send_json_post_request(url, data, timeout_sec = None, user_agent = None):
-  headers = { 'Content-Type': 'appication/json' }
+  headers = { 'Content-Type': 'application/json' }
   if user_agent != None:
     headers['User-Agent'] = user_agent
   return send_http_request(url, 'POST', headers, json.dumps(data))
